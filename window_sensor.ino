@@ -7,8 +7,8 @@ RCSwitch mySwitch = RCSwitch();
 #define key2  222222                        // signal: tilt
 #define key3  333333                        // signal: open
 
-const int switchPin                     = 3; // interrupt pin
-const int switchPin_2                   = 1; // 2 red
+const int switchPin                     = 3; // interrupt pin, 1st reed
+const int switchPin_2                   = 1; // 2nd reed
 const int statusLED                     = 4; // led
 int val = 0;
 int val_2 = 0;
