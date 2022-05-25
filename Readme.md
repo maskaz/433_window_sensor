@@ -35,6 +35,7 @@ https://github.com/sui77/rc-switch
 
 
 
-Ad.1. Reed switches needs to be pulled up by 4.7k resistors, so it will reduce a bit batteries life.
+Ad.1. SPST Reed switches needs to be pulled up by 4.7k resistors, so it will reduce a bit batteries life.
+      If you will find small SPDT type,use it.
 
 
