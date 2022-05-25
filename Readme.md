@@ -36,3 +36,24 @@ https://github.com/sui77/rc-switch
 
 
 Ad.1. Reed switches needs to be pulled up by 4.7k resistors, so it will reduce a bit batteries life.
+
+Example template for HA (configuration.yaml):
+
+sensor:
+  - platform: mqtt
+    name: kit_window 
+    state_topic: "mqtt_hassio/window_1/status"
+    
+template:
+  - sensor:
+      - name: "Kitchen window"
+        state: >
+          {% if is_state('sensor.kit_window', '111111') %}
+            Closed
+          {% elif is_state('sensor.kit_window', '222222') %}
+            Tilt
+          {% elif is_state('sensor.kit_window', '333333') %}
+            Open
+          {% else %}
+            Unknown
+          {% endif %}
