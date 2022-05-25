@@ -1,7 +1,7 @@
 # 433mhz/Attiny85 window sensor with tilt sensing
 
 
-Simple project from unused parts, builded for need to know in what status (open / close / tilt) windows are.
+Simple project from unused parts, built for need to know in what status (open / close / tilt) windows are.
 
 
 Needed parts:
@@ -15,10 +15,10 @@ Needed parts:
 
 
 Two reed switchs are located on not moving part of the window.
-Upper reed switch is connected to Attiny85 interrupt pin. When it state will change,  Attiny85 will be awakened  from deep sleep,  will check
+Upper reed switch is connected to Attiny85 interrupt pin. When it state will change,  Attiny85 will be awaken from deep sleep,  will check
 state on interrupt pin and pin connected to lower reed switch.
 
-Depending on state those two reed switches,Attiny will send send signal that can be interpreted by Home assistant.
+Depending on state those two reed switches, Attiny will send signal that can be interpreted by Home assistant.
 
 Libraries and additional software:
 
