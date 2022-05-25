@@ -1,0 +1,20 @@
+Example for HA (configuration.yaml):
+
+sensor:
+  - platform: mqtt
+    name: kit_window 
+    state_topic: "mqtt_hassio/window_1/status"
+    
+template:
+  - sensor:
+      - name: "Kitchen window"
+        state: >
+          {% if is_state('sensor.kit_window', '111111') %}
+            Closed
+          {% elif is_state('sensor.kit_window', '222222') %}
+            Tilt
+          {% elif is_state('sensor.kit_window', '333333') %}
+            Open
+          {% else %}
+            Unknown
+          {% endif %}
