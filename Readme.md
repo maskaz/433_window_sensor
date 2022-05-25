@@ -11,7 +11,7 @@ Needed parts:
 3. two reed switches
 4. two magnets
 5. enclosure
-6. batterys
+6. batteries
 
 
 Two reed switchs are located on not moving part of the window.
@@ -31,8 +31,8 @@ It's directly receive codes from 433mhz receiver and sends to selected topic.
 
 For Attiny85:
 
-https://github.com/cano64/ArduinoSystemStatus
+https://github.com/sui77/rc-switch
 
 
 
-Ad.1. Reed switches needs to be pulled up by 4.7k resistors, so it will reduce a bit batterys life.
+Ad.1. Reed switches needs to be pulled up by 4.7k resistors, so it will reduce a bit batteries life.
