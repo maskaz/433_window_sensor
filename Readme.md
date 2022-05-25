@@ -27,7 +27,7 @@ For RPI:
 Because HA support for GPIO 433hz receivers is deprecated (on Raspberry Pi) important part of this project is this code:
 https://github.com/Josar/RandomStuff/tree/master/Openhab-related?fbclid=IwAR34MRh7sx63tUwFGPHkGMdJ2-DRiPM5PgSixv8ITbYxMqI8azxpJqheVak
 
-It's directly receive codes from 433mhz receiver and sends to selected topic.
+Receives codes from 433mhz receiver and sends to mqtt.
 
 For Attiny85:
 
