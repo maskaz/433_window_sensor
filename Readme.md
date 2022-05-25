@@ -20,10 +20,19 @@ state on interrupt pin and pin connected to lower reed switch.
 
 Depending on state those two reed switches,Attiny will send send signal that can be interpreted by Home assistant.
 
+Libraries and additional software:
+
+For RPI:
+
 Because HA support for GPIO 433hz receivers is deprecated (on Raspberry Pi) important part of this project is this code:
 https://github.com/Josar/RandomStuff/tree/master/Openhab-related?fbclid=IwAR34MRh7sx63tUwFGPHkGMdJ2-DRiPM5PgSixv8ITbYxMqI8azxpJqheVak
 
 It's directly receive codes from 433mhz receiver and sends to selected topic.
+
+For Attiny85:
+
+https://github.com/cano64/ArduinoSystemStatus
+
 
 
 Ad.1. Reed switches needs to be pulled up by 4.7k resistors, so it will reduce a bit batterys life.
